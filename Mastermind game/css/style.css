@@ -1,0 +1,220 @@
+.game-board-container {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ca946c;
+}
+html{
+  background-color: #ca946c;
+}
+#game-title{
+  color: rgb(235, 238, 228);
+}
+body {
+  font-family: Consolas, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.3s all ease-in;
+  background-color: #ca946c;
+}
+
+.login-container form {
+  margin-top: 4rem;
+  background-color: #b1b59b;
+  padding: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-container form label {
+  margin-top: 1rem;
+  align-self: flex-start;
+}
+
+.login-container form .input-number {
+  width: 15rem;
+}
+
+.btn {
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.3rem;
+  padding: 0.4rem 0.8rem;
+  margin: 1rem;
+  cursor: pointer;
+  transition: all 0.1s ease-in;
+  color: #171b27;
+}
+
+.btn:hover {
+  background: #c7c4eb;
+  color: rgb(83, 44, 44);
+}
+
+.btn:disabled {
+  background: #c7c4eb;
+  color: #5b5b5b;
+  cursor: auto;
+}
+
+.btn img {
+  height: 1rem;
+  width: 1rem;
+}
+
+.circle {
+  display: flex;
+  width: 3rem;
+  height: 3rem;
+  background: #815d3b;
+  border-radius: 15rem;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem;
+  font-weight: bold;
+  color: #b9a7a7;
+  font-size: 1.6rem;
+  transition: all 0.1s ease-in;
+}
+
+.game-settings {
+  background: #ccad8e;
+  border-radius: 1rem;
+  padding: 0.2rem 0.5rem;
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.game-settings .btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-settings .settings-drawer {
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
+  transition: all 0.3s ease-in-out;
+  height: 0;
+}
+
+.game-settings .settings-drawer.open {
+  height: 4rem;
+}
+
+.game-settings .input-range-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.game-settings .input-range {
+  cursor: grab;
+}
+
+.game-settings .input-range:active {
+  cursor: grabbing;
+}
+
+.input-number {
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.3rem;
+  padding: 0.2rem 0.4rem;
+  width: 4rem;
+}
+
+.main-container {
+  background: #dfc3a1;
+  display: flex;
+  border-radius: 1rem;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.4);
+}
+
+#color-palete {
+  margin-top: 2rem;
+  max-width: 80vw;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+}
+
+#color-palete > * {
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.divider {
+  border: 0.5px solid #a29678;
+  background: #63572f;
+  display: flex;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+#game-board {
+  flex-direction: column;
+}
+
+#game-board #answer-col {
+  height: 100%;
+  width: auto;
+  margin: 1rem;
+}
+
+#game-board #answer-col .circle-container {
+  display: flex;
+  flex-direction: row;
+}
+
+#game-board #answer-col .circle-container > * {
+  border: 1.5px #7c5e34 solid;
+}
+
+#game-board #answer-col .guess-container {
+  display: flex;
+}
+
+#game-board #answer-col .guess-container .hint-container {
+  margin: 0.5rem 0.2rem;
+  width: 5rem;
+  height: 3.5rem;
+  background: #9f8359;
+  border-radius: 0.3rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#game-board #answer-col .guess-container .hint-container .circle {
+  background: hsl(34, 62%, 29%);
+  width: 0.8rem;
+  margin: 0.2rem;
+  height: 0.8rem;
+}
+
+#game-board #answer-col .guess-row {
+  display: flex;
+  flex-direction: row;
+}
