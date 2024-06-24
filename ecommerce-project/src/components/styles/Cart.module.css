@@ -1,0 +1,31 @@
+.cart {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cartItem {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+  .cart h1 {
+    font-size: 24px;
+  }
+  
+  
+  .cartItem h3 {
+    font-size: 18px;
+  }
+  
+  .cartItem p {
+    margin: 10px 0;
+  }
+  
+  .cartItem input {
+    width: 50px;
+  }
+  
