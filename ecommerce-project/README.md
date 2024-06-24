@@ -6,11 +6,17 @@ The project is a simple e-commerce web application where users can browse produc
 **Technologies Used:**
 
 React: Front-end library for building user interfaces.
+
 SWR: React Hooks library for data fetching.
+
 Axios: Promise-based HTTP client for making API requests.
+
 Zustand: State management library for managing global application state.
+
 useState: React Hook for managing local component state.
+
 useMemo: React Hook for memoizing values.
+
 useCallback: React Hook for memoizing callbacks.
 
 **API to work with:** https://fakestoreapi.com/docs
