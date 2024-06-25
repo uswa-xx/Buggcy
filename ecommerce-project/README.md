@@ -25,22 +25,30 @@ useCallback: React Hook for memoizing callbacks.
 
 **Components:**
 ProductList: Component to display a list of products fetched from the API.
+
 ProductDetail: Component to display detailed information about a selected product.
+
 Cart: Component to display the user's shopping cart.
+
 OrderForm: Component to simulate placing an order.
 
 **Hooks:**
 useProducts: Custom hook for fetching and managing product data using SWR.
+
 useCart: Custom hook for managing the user's shopping cart state using Zustand.
 
 **Pages:**
 Home: Landing page displaying the product list.
+
 ProductDetailsPage: Page displaying detailed information about a selected product.
+
 CartPage: Page displaying the user's shopping cart.
+
 CheckoutPage: Page for simulating the checkout process and placing an order.
 
 **Services:**
 apiService: Service module for making API requests using Axios.
+
 cartService: Service module for managing the shopping cart state.
 
 **Assessment Tasks:**
